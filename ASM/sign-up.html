@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HINHANH/Brand.svg" type="image/png" />
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="css/sign_in_up.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="full-body">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="user_container">
+            <div class="tab-content">
+                <div id="memRegis" class="c-box_form">
+                    <h3>ĐĂNG KÝ</h3>
+                    <small style="color: red;" id="notice"></small>
+                    <form action="" onsubmit="return false" id="formSignUp" name="formSignUp" class="formSignUp" method="get">
+                        <div class="c-group_info">
+                            <div class="c-group">
+                                <input type="email" id="regis_email" name="regis_email" class=""
+                                    placeholder="Nhập email của bạn" >
+                            </div>
+                           
+                            <div class="c-group">
+                                <input  maxlength="11" minlength="10" type="number" id="regis_phone"
+                                    name="regis_phone" class="form-control" placeholder="Số điện thoại *">
+                            </div>
+                            
+                            <div class="c-group">
+                                <input  maxlength="25" type="text" id="regis_name" name="regis_name"
+                                    class="form-control " placeholder="Nhập họ và tên *">
+                            </div>
+
+                            <div class="c-group">
+                                <input  type="password" id="regis_password"
+                                    name="regis_password" class="form-control" placeholder="Mật khẩu *">
+                            </div>
+                            <div class="c-group">
+                                <input  type="password" id="repassword"
+                                    name="repassword" class="form-control" placeholder="Nhập lại Mật khẩu *">
+                            </div>
+                            
+                            <div class="c-btn_group clearfix">
+                                <button type="submit" id="submit_form"><span>ĐĂNG KÝ</span></button>
+                            </div>
+                            </a>
+                            <p class="sign_in">Có tài khoản? <a style="color: red;" class="sign_in" href="sign-in.html">Đăng nhập</a></p>
+                            <p class="or_sign-in"><span>Hoặc đăng nhập bằng</span></p>
+                            <div class="c-box_social ">
+                                <a href="#" title="Facebook" class=" social_fb social">
+                                    <ion-icon name="logo-facebook"></ion-icon> Facebook
+                                </a>
+                                <a href="#" title="Google" class=" social_gg social">
+                                    <ion-icon name="logo-google"></ion-icon> Google
+                                </a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="js/page/sign-up.js"></script>
+</body>
+
+</html>

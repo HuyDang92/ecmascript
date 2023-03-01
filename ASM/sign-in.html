@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/logo.svg" type="image/png" />
+        <title>Đăng Nhập</title>
+        <link rel="stylesheet" href="css/sign_in_up.css" />
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="full-body">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="" />
+                </a>
+            </div>
+            <div class="user_container">
+                <div class="tab-content">
+                    <div id="memLog" class="c-box_form">
+                        <h3>ĐĂNG NHẬP</h3>
+                        <small style="color: red" id="notice"></small>
+                        <form action="" onsubmit="return false" name="loginform" id="loginform" class="login_form" method="get">
+                            <div class="c-group_info">
+                                <div class="c-group">
+                                    <input class="form-control" type="text" name="log_email" id="log_email" placeholder="Email" value="" />
+                                </div>
+
+                                <div class="c-group">
+                                    <input class="form-control" type="password" name="log_password" id="log_password" placeholder="Mật khẩu *" />
+                                </div>
+                                <a class="c-forgot_pass" title="Quên mật khẩu ?" href=""> Quên mật khẩu ? </a>
+
+                                <div class="c-btn_group clearfix">
+                                    <button type="submit" id="log_inBtn"><span>ĐĂNG NHẬP</span></button>
+                                </div>
+                                <p class="sign_up">Chưa có tài khoản? <a style="color: red" href="sign-up.html">Đăng ký</a></p>
+                                <p class="or_sign-in"><span>Hoặc đăng nhập bằng</span></p>
+                                <div class="c-box_social">
+                                    <a href="" title="Facebook" class="social_fb social"> <ion-icon name="logo-facebook"></ion-icon> Facebook </a>
+                                    <a href="" title="Google" class="social_gg social"> <ion-icon name="logo-google"></ion-icon> Google </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="js/page/sign-in.js"></script>
+    </body>
+</html>

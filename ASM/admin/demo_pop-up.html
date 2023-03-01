@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #popup {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            #popup-content {
+                background-color: rgba(0, 0, 0, 0.5);
+                margin: 5% auto;
+                padding: 20px;
+                border-radius: 5px;
+                width: 60%;
+                height: 60%;
+            }
+
+            #popup-close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #popup-close:hover {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button id="popup-btn-insert">Open insert form</button>
+            <button id="popup-btn-update">Open Update form</button>
+            <div id="popup"></div>
+        </div>
+        <script>
+            var popup = document.getElementById("popup");
+            var popupBtnIn = document.getElementById("popup-btn-insert");
+            var popupBtnUp = document.getElementById("popup-btn-update");
+
+            popupBtnIn.onclick = function () {
+                popup.style.display = "block";
+                popup.innerHTML = `<div id="popup-content">
+                                        <form id="addCategoryForm">
+                                            <div class="form-group">
+                                                <label for="catId">ID danh mục</label>
+                                                <input type="text" class="form-control" id="catId" placeholder="Nhập ID danh mục" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="catName">Tên danh mục</label>
+                                                <input type="text" class="form-control" id="catName" placeholder="Nhập tên danh mục" />
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Thêm mới</button>
+                                        </form>
+                                    </div>`;
+                var popupClose = document.querySelector("#popup-content #popup-close");
+                popupClose.onclick = function () {
+                    popup.style.display = "none";
+                };
+            };
+
+            popupBtnUp.onclick = function () {
+                popup.style.display = "block";
+                popup.innerHTML = `<div id="popup-content">
+                                        <form id="addCategoryForm">
+                                            <div class="form-group">
+                                                <label for="catId">ID danh mục</label>
+                                                <input value="1" type="text" class="form-control" id="catId" placeholder="Nhập ID danh mục" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="catName">Tên danh mục</label>
+                                                <input value="Nước hoa" type="text" class="form-control" id="catName" placeholder="Nhập tên danh mục" />
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Thêm mới</button>
+                                        </form>
+                                    </div>`;
+                var popupClose = document.querySelector("#popup-content #popup-close");
+                popupClose.onclick = function () {
+                    popup.style.display = "none";
+                };
+            };
+
+            window.onclick = function (event) {
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            };
+        </script>
+    </body>
+</html>

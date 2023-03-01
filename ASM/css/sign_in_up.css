@@ -1,0 +1,118 @@
+body {
+    background-color: #f6f3e4;
+    font-family: "Nunito Sans", sans-serif;
+}
+* {
+    text-decoration: none;
+}
+a {
+    color: #000;
+}
+.logo {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.user_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-box_form > h3 {
+    text-align: center;
+}
+a.sign_up {
+    color: crimson;
+}
+p.sign_up {
+    text-align: center;
+}
+#memLog,
+#memRegis {
+    background-color: white;
+    padding: 2.5rem;
+    padding-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.c-group_info input {
+    border: none;
+    padding: 0.7rem;
+    width: 90%;
+    border: 1px dotted #ccc;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+.c-forgot_pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.c-btn_group > button {
+    width: 325px;
+    height: 50px;
+    border-radius: 0;
+    background-color: black;
+    border: 1px solid #fff;
+    box-shadow: -1px -1px;
+    position: relative;
+}
+.c-btn_group button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: -1px -1px #fff;
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+}
+.c-btn_group button:hover::before {
+    width: 100%;
+}
+.c-btn_group button span {
+    position: absolute;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    top: 17px;
+    left: 37%;
+    z-index: 1000;
+    font-weight: bold;
+    color: #fff;
+    transition: ease-in-out 0.2s;
+}
+.c-btn_group button:hover span {
+    color: black;
+}
+
+.or_sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.c-box_social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.c-box_social ion-icon {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.user-input:checked ~ .menu-overplay {
+    display: block;
+}
+.user-input:checked ~ .user {
+    transform: translateX(0);
+}
+/*  */
